@@ -1,0 +1,41 @@
+## Problema imaginario en Java para mejorar tu lógica de programación
+
+**Descripción del problema:**
+
+Imagina que estás desarrollando un sistema de gestión de pedidos para una tienda online.
+El sistema debe permitir al usuario ingresar varios productos a su pedido, cada uno con una cantidad específica.
+Al finalizar el pedido, el sistema debe calcular el total a pagar, considerando el precio unitario de cada producto
+y la cantidad seleccionada. Además, se debe aplicar un descuento del 10% si el total de la compra supera los $100.
+
+**Solución paso a paso:**
+
+1. **Declarar variables:**
+   - `productos`: Un arreglo para almacenar los productos seleccionados.
+   - `precios`: Un arreglo para almacenar los precios unitarios de cada producto.
+   - `cantidades`: Un arreglo para almacenar las cantidades de cada producto seleccionado.
+   - `total`: Una variable para almacenar el total a pagar.
+   - `descuento`: Una variable para almacenar el monto del descuento.
+
+2. **Ingresar productos:**
+   - Utilizar un ciclo `for` para permitir al usuario ingresar la cantidad de productos que desea comprar.
+   - Dentro del ciclo, solicitar al usuario que ingrese el nombre del producto, su precio unitario y la cantidad deseada.
+   - Almacenar la información en los arreglos correspondientes.
+
+3. **Calcular el total sin descuento:**
+   - Utilizar un ciclo `for` para recorrer los arreglos `productos`, `precios` y `cantidades`.
+   - Dentro del ciclo, multiplicar el precio unitario de cada producto por la cantidad seleccionada y acumular el resultado en la variable `total`.
+
+4. **Aplicar descuento (si corresponde):**
+   - Verificar si el `total` supera los $100.
+   - Si es así, calcular el monto del descuento (`descuento = total * 0.1`) y restarlo del `total`.
+
+5. **Mostrar el total final:**
+   - Mostrar un mensaje al usuario indicando el total a pagar, incluyendo el descuento (si se aplicó).
+
+**Explicación de los conceptos utilizados:**
+
+* **Flujo de control `if else`:** Se utiliza para determinar si se debe aplicar un descuento o no, en función del valor del `total`.
+* **Flujo de control `switch case`:** No se utiliza en este ejemplo, pero podría ser útil para clasificar los productos por categoría o para aplicar diferentes descuentos según el tipo de producto.
+* **Flujo de control `for`:** Se utiliza para recorrer los arreglos `productos`, `precios` y `cantidades`, y para permitir al usuario ingresar la información de los productos.
+* **Iterando arreglos con sentencia `for` y palabras reservadas `break` y `continue`:** En este ejemplo, no se utilizan las palabras reservadas `break` y `continue`. Sin embargo, se podrían utilizar para controlar el flujo del ciclo `for` en caso de ser necesario.
+*
